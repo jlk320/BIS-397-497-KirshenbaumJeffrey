@@ -17,12 +17,12 @@ from operator import itemgetter
 for part, desc, quant, price in sorted(invoices, key=itemgetter(1)):
     print(f'{part:>2} {desc:<16} {quant:>3}{price:7.2f}')
     
-#Part b.): Sorting by quantity      
+#Part b.): Sorting by price      
 for part, desc, quant, price in sorted(invoices, key=itemgetter(3)):
     print(f'{part:>2}{desc:<16}{quant:>3}{price:7.2f}')
 
 
-#Partc.)sorting by price 
+#Partc.)sorting by quantity 
 quantities = [(desc, quant) for part, desc, quant, price in invoices ]
 
 for desc, quant in sorted(quantities, key=itemgetter(1)):
