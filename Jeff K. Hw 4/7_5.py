@@ -13,18 +13,16 @@ was unmodified."""
 
 
 
-#creating 2 by 3 array
 import numpy as np
 
-two_array=np.array([2**0,2**1,2**2,2**3,2**4,2**5]).reshape(2,3)
-#printing 2 by 3 array
-print(two_array)
-#flattening and raveling
-flattened = two_array.flatten()
-raveled = two_array.ravel()
-#showing flattened and ravelled and original
-print(flattened)
-print(raveled)
-print(two_array)
+two_array=np.array([2** i for i in range(6)]).reshape(2,3)
+
+two_array
+
+
+two_array.flatten()
+two_array
+two_array.ravel()
+two_array
 
 
