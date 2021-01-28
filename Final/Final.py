@@ -121,7 +121,7 @@ yellow_2019 = yellow_2019[yellow_2019.valid == True]
 
 yellow_2019['total_amount'].describe()
 
-#Now I'll delete rows where total amount is <1000
+#Now I'll delete rows where total amount is >1000
 
 del yellow_2019['valid']
 
@@ -302,7 +302,7 @@ yellow_2020 = yellow_2020[yellow_2020.valid == True]
 
 yellow_2020['total_amount'].describe()
 
-#Now I'll delete rows where total amount is <1000
+#Now I'll delete rows where total amount is >1000
 
 del yellow_2020['valid']
 
