@@ -75,13 +75,13 @@ array1_000_000 = '11.6 ms ± 279 µs per loop'
 
 
 #creating new dictionary with more readable output
-timeit_dic={"List Avgerage. Execution Time": [list1,list10,list100,
+timeit_dic_={"List Avgerage. Execution Time": [list1,list10,list100,
                                             list1_000,list10_000,list100_000,
                                             list1_000_000], "Array Average. Execution Time":
             [array1,array10,array100,array1_000,array10_000, array100_000,
             array1_000_000]}
  #creating a more readable dable    
-table=pd.DataFrame(timeit_dic)
-table.index=[1,10,100,1_000,10_000,100_000,1_000_000]
-print(table)
+table_=pd.DataFrame(timeit_dic_)
+table_.index=[1,10,100,1_000,10_000,100_000,1_000_000]
+print(table_)
 
