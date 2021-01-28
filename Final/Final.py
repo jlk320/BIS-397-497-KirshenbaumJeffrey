@@ -403,4 +403,4 @@ taxi_table = pd.DataFrame(taxi_dict)
 taxi_table.index=['2019', '2020']
 taxi_table
 
-
+print(taxi_table)
